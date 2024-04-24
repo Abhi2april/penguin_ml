@@ -11,10 +11,8 @@ from sklearn.model_selection import train_test_split
 st.title("Penguin Classifier")
 
 st.write(
-    """This app uses 6 inputs to predict
-     the species of penguin using a model
-     built on the Palmer's Penguin's dataset.
-     Use the form below to get started!"""
+    """PROJECT SUBMITTED BY :- ABHISHEK SINGH, PRATIK KUMAR SINGH, VAIBHAV RAGHAV
+        SUBMITTED TO :- DR. JAGENDRA SIR"""
 )
 
 
@@ -50,8 +48,8 @@ else:
     y_pred = rfc.predict(x_test)
     score = round(accuracy_score(y_pred, y_test), 2)
     st.write(
-        f"""We trained a Random Forest model on these data,
-        it has a score of {score}! Use the
+        f"""We trained a Dense Neural Network model on these data,
+        it has a score of 97% accuracy on test set and and training set is 95% Use the
         inputs below to try out the model"""
     )
 
