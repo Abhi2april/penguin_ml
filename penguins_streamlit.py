@@ -95,9 +95,8 @@ st.subheader("Predicting Your Penguin's Species:")
 prediction_species = unique_penguin_mapping[new_prediction][0]
 st.write(f"We predict your penguin is of the {prediction_species} species")
 st.write(
-    """We used a machine learning
-    (Random Forest) model to predict the
-    species, the features used in this
+    """We used a Dense Neural Network model on these data to predict the
+    species and used an SGD optimiser, the features used in this
     prediction are ranked by relative
     importance below."""
 )
